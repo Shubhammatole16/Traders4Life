@@ -177,7 +177,7 @@ body{
     position: relative;
   }
   .design .text{
-    animation: blink .5s infinite alternate; 
+    animation: blink 2s infinite; 
     font-weight: 700;
   }
   @keyframes blink {
@@ -186,8 +186,28 @@ body{
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    20% {
+      background: linear-gradient(137.9deg, rgb(62, 146, 69) 7.8%, rgb(251, 220, 23) 16%, rgb(242, 160, 35) 32.7%, rgb(253, 12, 12) 50.4%, rgb(192, 26, 129) 71.5%, rgb(78, 156, 226) 83.1%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    40% {
+      background: linear-gradient(137.9deg, rgb(251, 220, 23) 7.8%, rgb(242, 160, 35) 16%, rgb(253, 12, 12) 32.7%, rgb(192, 26, 129) 50.4%, rgb(78, 156, 226) 71.5%, rgb(62, 146, 69) 83.1%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    60% {
+      background: linear-gradient(137.9deg, rgb(242, 160, 35) 7.8%, rgb(253, 12, 12) 16%, rgb(192, 26, 129) 32.7%, rgb(78, 156, 226) 50.4%, rgb(62, 146, 69) 71.5%, rgb(251, 220, 23) 83.1%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    80% {
+      background: linear-gradient(137.9deg, rgb(253, 12, 12) 7.8%, rgb(192, 26, 129) 16%, rgb(78, 156, 226) 32.7%, rgb(62, 146, 69) 50.4%, rgb(251, 220, 23) 71.5%, rgb(242, 160, 35) 83.1%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     100% {
-      background: linear-gradient(137.9deg, rgb(253, 12, 12) 7.8%, rgb(251, 220, 23) 16%, rgb(242, 160, 35) 32.7%, rgb(251, 220, 23) 50.4%, rgb(62, 146, 69) 71.5%, rgb(78, 156, 226) 83.1%);
+      background: linear-gradient(137.9deg, rgb(192, 26, 129) 7.8%, rgb(78, 156, 226) 16%, rgb(62, 146, 69) 32.7%, rgb(251, 220, 23) 50.4%, rgb(242, 160, 35) 71.5%, rgb(253, 12, 12) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -423,19 +443,23 @@ body{
     }
   }
   .blog-slider__code {
-    font-weight: 500;
+    font-weight: 900;
+    font-size: larger;
+    text-decoration: underline;
+    color: royalblue;
   }
   .blog-slider__title {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 900;
     color: #0d0925;
   }
   .blog-slider__text {
     color: #4e4a67;
     margin-bottom: 30px;
     line-height: 1.5em;
+    font-size: small;
   }
-  .blog-slider__button {
+  /* .blog-slider__button {
     background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
     padding: 15px 35px;
     border-radius: 50px;
@@ -447,7 +471,7 @@ body{
     text-align: center;
     letter-spacing: 1px;
     font-size: larger;
-  }
+  } */
   @media screen and (max-width: 576px) {
     .blog-slider__button {
       width: 100%;
@@ -496,7 +520,7 @@ body{
     text-align: center;
     padding:30px 25px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
-    border-radius: 20px;
+    border-radius: 0 0 20px 30px;
     margin-bottom: 30px;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
@@ -585,7 +609,7 @@ body{
       height: 350px;
       width: 100%;
       overflow: hidden;
-      border-radius: 0px 0px 20px 20px;
+      /* border-radius: 0px 0px 20px 20px; */
       display: inline-block;
   }
   .img-container img {
@@ -609,7 +633,7 @@ body{
     right: 15px;
     background-color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 0 0 20px 0;
     font-size: 12px;
     color: #660960;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -623,7 +647,8 @@ body{
     text-align: center;
     align-items: center;
     background-color: #e7d8d8;
-    height: 80vh;
+    height: fit-content;
+    padding-bottom: 5%;
 }
 .contact .heading{
     margin-bottom: 5rem;
@@ -818,6 +843,7 @@ details[open] summary:after {
     margin: 0 auto;
     border-radius: 0.2em;
     padding: 1rem;
+    padding-bottom: 5%;
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -917,26 +943,26 @@ summary:after {
   .wave#wave1 {
     z-index: 1000;
     opacity: 1;
-    bottom: 0;
-    animation: animateWaves 4s linear infinite;
+    bottom: 20px;
+    animation: animateWaves 5s linear infinite;
   }  
   .wave#wave2 {
     z-index: 999;
-    opacity: 0.5;
+    opacity: 0.3;
     bottom: 10px;
-    animation: animate 4s linear infinite !important;
+    animation: animate 5s linear infinite !important;
   }  
   .wave#wave3 {
     z-index: 1000;
-    opacity: 0.2;
+    opacity: 0.1;
     bottom: 15px;
-    animation: animateWaves 3s linear infinite;
+    animation: animateWaves 4s linear infinite;
   } 
   .wave#wave4 {
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
-    animation: animate 3s linear infinite;
+    animation: animate 4s linear infinite;
   }
   @keyframes animateWaves {
     0% {
@@ -969,6 +995,21 @@ summary:after {
 
 /* START OF MEDIA 700 CSS */
 @media (max-width: 700px) {
+
+  .counters{
+    background-size: auto 130px;
+  }
+
+  .contact-in{
+    flex-direction: column;
+  }
+  .contact-map
+	{
+		padding-bottom: 3rem;
+	}
+  .contact-form-btn{
+    width: 90% !important;
+  }
 
     .header .logo img{
         width: 100%;
@@ -1072,12 +1113,17 @@ summary:after {
         padding: 0;
         margin-bottom: 5em;
     }
+    
 }
 /* STENDART OF MEDIA 575 CSS */
 
 
 /* START OF MEDIA 1000 CSS */
 @media (max-width: 1000px){
+    .img-container img {
+        height: 300px;
+        margin: 0px 0px 0px -50px;
+    }
     html{
         font-size: 50%;
     }
