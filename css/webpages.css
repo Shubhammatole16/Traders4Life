@@ -1,495 +1,292 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
-.offlinefirst{
-  padding-top: 20px;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  background-color: #414141;
-}
-.offlinefirst h1{
-  color: red;
-  padding-top: 20px;
-  font-weight: 900;
-  font-size: xx-large
-}
-.offlinefirst h6{
-  margin-top: 10px;
-  font-weight: 800;
-  font-size: larger;
-  color: green;
-}
 
-/*START OF WHAT WILL YOU LEARN */
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   margin: 0;
 }
 
-.learnsection {
-  --color: rgba(30, 30, 30);
-  --bgColor: rgba(245, 245, 245);
-  display: grid;
-  align-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  font-family: "Exo 2", sans-serif;
-  color: var(--color);
-  background: linear-gradient(68.4deg, rgb(248, 182, 204) 0.5%, rgb(192, 198, 230) 49%, rgb(225, 246, 240) 99.8%);
+
+/* START OF HOME PAGE CSS */
+.home-page{
+  text-align: center;
 }
 
-.learnsection h1 { 
-  text-align: center; 
-  color: darkmagenta; 
-  font-size: 2rem;
-}
 
-.learnsection ol {
-  width: min(67rem, 100%);
-  margin-inline: auto;
+/* START OF HOME-LEFT CSS */
+.home-left{
+  text-align: center;
+  padding: 5%;
+  height: auto;
+  float:left;
+  width: 100%;
+  background-color: #000000;
+}
+.offlinefirst{
+  text-align: left; 
+  margin-left: 7rem;
+}
+.offlinefirst h1{
+  color: #01C88C;
+  font-weight: 900;
+  font-size: 35px;
+}
+.offlinefirst h6{
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 25px;
+  color: #0498C2;
+  padding-bottom: 3%;
+}
+.home-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
-  list-style: none;
-  counter-reset: stepnr;
+  gap: 20px;
+  margin-top: 7rem;
+  float: left;
 }
-
-.learnsection ol li:nth-child(6n + 1) { --accent-color: #EF4747 }
-.learnsection ol li:nth-child(6n + 2) { --accent-color: #4cbccb }
-.learnsection ol li:nth-child(6n + 3) { --accent-color: #7197d3 }
-.learnsection ol li:nth-child(6n + 4) { --accent-color: #ae78cb }
-.learnsection ol li:nth-child(6n + 5) { --accent-color: #7dc7a4 }
-.learnsection ol li:nth-child(6n + 6) { --accent-color: #f078c2 }
-
-.learnsection ol li {
-  counter-increment: stepnr;
-  width: 30rem;
-  height: 18rem;
-  --borderS: 2rem;
-  aspect-ratio: 1;
+.home-card {
+  background: linear-gradient(114.9deg, #012226 8.3%, #012D49 41.6%, #023564 93.4%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home-card h2 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 24px;
+}
+.home-card p {
+  color: #cfcccc;
+  font-size: 14px;
+  font-weight: 500;
+}
+.home-reg-container{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: calc(var(--borderS) + 2rem);
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 7rem;
+  float: left;
+}
+.home-reg-card{
+  background: linear-gradient(138deg, rgb(32, 201, 255) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  width: 420px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home-reg-card h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: x-large;
+}
+/* END OF HOME-LEFT CSS */
+/* END OF HOME PAGE CSS */
+
+
+/*START OF WHAT WILL YOU LEARN */
+.main-container {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(181.2deg, #000 10.5%, #1F2658 86.8%);
+}
+.main-container-get{
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(181.2deg, #1F2658 10.5%, #000 86.8%);
+}
+.heading__title {
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+}
+span{
+  background: linear-gradient(290.7deg, rgb(133, 255, 159) 2.3%, rgb(0, 172, 249) 100.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin: 20px;
+  padding: 0px 20px 0px 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.card__icon {
   position: relative;
+  text-decoration: none;
+  background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.learnsection ol li::before,
-.learnsection ol li::after {
-  inset: 0;
-  position: absolute;
-  border-radius: 15%;
-  border: var(--borderS) solid var(--bgColor);
-  line-height: 1.1;
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
 }
-.learnsection ol li::before {
-  opacity: 0.3;
-  content: counter(stepnr);
-  color: var(--accent-color);
-  padding-left: 18rem;
-  font-size: 12rem;
-  font-weight: 700;
-  overflow: hidden;
-  background: rgb(255, 255, 255) !important;
+.card__title {
+  grid-row: 3/4;
+  font-weight: 600;
+  color: #000;
+  font-size: large;
+  font-family: "Exo 2", sans-serif;
 }
-
-.learnsection ol li::after {
-  content: "";
-  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+/* CARD BACKGROUNDS */
+.card-1 {
+  background-color: #fff;
+  text-align: left;
 }
-
-.learnsection ol li > * { width: 18.5rem }
-.learnsection ol li .icon { font-size: 2rem; color: var(--accent-color); text-align: left }
-.learnsection ol li .title { font-size: 1.3rem; font-weight: 900 }
-.learnsection ol li .descr { font-size: 0.9rem; font-weight: 500; letter-spacing: normal; 
+/* RESPONSIVE */
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
 }
 /* END OF WHAT WILL YOU LEARN */
 
-/* START OF FORM SECTION CSS */
-.formsection{
-  background:rgb(30,30,40);
-  padding-top: 5%;
-  padding-bottom: 5%;
-  font-family: "Exo 2", sans-serif;
 
-}
-form { 
-  max-width:420px; 
-  margin:0px auto; 
-}
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #CC6666;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-.feedback-input:focus { 
-  border:2px solid #CC4949; 
-}
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#CC6666;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { 
-  background:#CC4949; 
-}
-/* END OF FORM SECTION CSS */
-
-
-
-/* START OF FAQ SECTION CSS*/
-#faq .heading{
-  font-size: xx-large;
-}
-div + div {
-  clear: both;
-}
-p {
-  line-height: 1.4em;
-  color: #000000;
-  font-size: 1.2em;
-}     
-.faq-title {
-  font-size: 2em;
-  margin: 0.4em 0;
-}
-div.seperator {
-  width: 7.5em;
-  background-color: #e31b1b;
-  height: 0.17em;
-  margin-left: -1.8em;
-}
-.faq-list > div {
-  border-bottom: 0.07em solid #ededed;
-  padding: 1.5em 0em;
-} 
-.faq-list > div:last-child {
-  border: unset;
-}
-.faq-header{
-  text-align: center;
-}
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}
-summary {
-  font-size: 1.5em;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; 
-  user-select: none;
-  transition: all 0.3s ease;
-}
-summary:hover {
-  color: #e31b1b;
-}
-details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
-}
-      
-@keyframes sweep {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 55px}
-}
-      
-details[open] summary {
-  color: #e31b1b;
-}
-details[open] p {
-  border-left: 2px solid #e31b1b;
-  margin-left: 55px;
-  padding-left: 25px;
-  opacity: 100;
-  transition: all 3s ease;
-}
-details[open] summary:after {
-  content: "-";
-  font-size: 3.2em;
-  margin: -33px 0.35em 0 0;
-  font-weight: 200;
-}
-.faq-body {
-  font-family: "Exo 2", sans-serif;
-  width: 100%;
-  height: fit-content;
-  margin: 0 auto;
-  border-radius: 0.2em;
-  padding: 1rem;
-  padding-bottom: 5%;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-.faq-list {
-  width: 55em;
-  margin: 1em auto;
-  padding: 2em 0;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-summary:after {
-  background: transparent;
-  border-radius: 0.3em;
-  content: "+";
-  color: #e31b1b;
-  float: left;
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: -0.3em 0.65em 0 0;
-  padding: 0;
-  text-align: center;
-  width: 25px;
-}
-/* END OF FAQ SECTION CSS*/
-
-
-.counters {
-	background-image: url(../images/finallogo.png);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-	color: #fff;
-	padding: 120px 20px;
-  background-color:#CCC3E1;
-}
-
-
-
-/* START OF MEDIA 1150 CSS */
-@media (max-width: 1150px){
-  .learnsection ol li{
-    width: 25rem;
-  }
-  .learnsection ol li::before {
-    padding-left: 14rem;
+/* START OF MEDIA 1140 CSS */
+@media (max-width: 1140px) {
+  .card{
+    width: 450px;
   }
 }
+/* END OF MEDIA 1140 CSS */
 
 
-/* START OF MEDIA 990 CSS */
-@media (max-width: 990px){
-  .offlinefirst h6 {
-    font-size: small;
-  }
-  .learnsection h1 {
-    font-size: 1.8rem;
-  }
-  .learnsection ol li{
-    width: 24rem;
-    --borderS: 1.5rem;
-  }
-  .learnsection ol li::before {
-    padding-left: 14rem;
-  }
-  #faq summary{
-    font-size: 1.4em;
-  }
-  #faq p{
-    font-size: 1.1em;
-  }
-  .faq-list {
-    width: 45em;
+/* START OF MEDIA 1040 CSS */
+@media (max-width: 1040px) {
+  .card{
+    width: 400px;
   }
 }
+/* END OF MEDIA 1040 CSS */
 
 
-@media (max-width: 700px){
-  .offlinefirst h6 {
-    font-size: small !important;
+/* START OF MEDIA 900 CSS */
+@media (max-width: 900px) {
+  .offlinefirst h1{
+    font-size: 30px;
   }
-  .learnsection h1 {
-    font-size: 1.8rem;
+  .offlinefirst h6{
+    font-size: 20px;
   }
-  .faq-list {
-    width: 45em;
+  .home-container{
+    width: 350px;
   }
-}
-
-/* START OF MEDIA 575 CSS */
-@media (max-width: 575px) {
-  .faq-list {
-    width: 45em !important;
+  .home-card h2 {
+    font-size: 19px;
   }
-}
-/* END OF MEDIA 575 CSS */
-
-
-.btn{
-    padding: 15px 20px 15px 20px;
-    outline: none;
-    border: none;
-    border-radius: 1rem;
-    background: white;
-    color: #002e5f;
-    border-style: groove;
-    border-color: #002e5f;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-weight: 800;
-    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
-    margin-bottom: 5%;
-    letter-spacing: .1rem;
-}
-.btn:hover{
-
-  opacity: .9;
-  color: white;
-  background: #002e5f;
-
-}
-
-
-/* START OF OFFLINE HOME CSS*/
-.ag-format-container {
-  margin: 0 auto;
-}
-
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 50px 0;
-}
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
-  margin: 0 15px 30px;
-  overflow: hidden;
-  border-radius: 28px;
-}
-.ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #121212;
-  overflow: hidden;
-  position: relative;
-  text-decoration: none;
-}
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-  text-decoration: none;
-  color: #FFF;
-}
-.ag-courses-item_link:hover .ag-courses-item_bg {
-  -webkit-transform: scale(10);
-  -ms-transform: scale(10);
-  transform: scale(10);
-}
-.ag-courses-item_title {
-  margin: 0 0 25px;
-  overflow: hidden;
-  font-weight: bold;
-  font-size: 30px;
-  color: #FFF;
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date-box {
-  font-size: 18px;
-  color: #e7e0e0;
-  z-index: 2;
-  position: relative;
-}
-.ag-courses-item_date {
-  font-weight: bold;
-  color: #f9b234;
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
-}
-.ag-courses-item_bg {
-  height: 128px;
-  width: 128px;
-  background-color: #f9b234;
-  z-index: 1;
-  position: absolute;
-  top: -75px;
-  right: -75px;
-  border-radius: 50%;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-
-
-
-
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
+  .home-card p {
+    font-size: 12px;
   }
-  .ag-courses-item_title {
-    font-size: 24px;
+  .home-reg-card h2 {
+    font-size: 23px;
+  }
+  .heading__title{
+    font-size: 35px;
+  }
+  .card{
+    width: 500px;
   }
 }
+/* END OF MEDIA 900 CSS */
 
-@media only screen and (max-width: 767px) {
-  .ag-format-container {
-    width: 96%;
+
+/* START OF MEDIA 650 CSS */
+@media (max-width: 650px) {
+  .home-card{
+    width: 300px;
   }
-
+  .home-reg-card{
+    width: fit-content;
+  }
+  .card{
+    width: 450px;
+  }
+  .heading__title{
+    font-size: 30px;
+  }
 }
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
+/* END OF MEDIA 650 CSS */
 
-    font-size: 24px;
+
+/* START OF MEDIA 550 CSS */
+@media (max-width: 550px) {
+  .home-left{
+    padding: 30px;
   }
-  .ag-courses-item_link {
-    padding: 22px 40px;
+  .offlinefirst{
+    margin-left: 0;
   }
-  .ag-courses-item_date-box {
+  .card{
+    width: 400px;
+    padding: 0px 10px 0px 10px;
+  }
+  .card__icon{
+    font-size: 25px;
+  }
+  .card__title{
+    font-size: 15px;
+  }
+  .heading__title{
+    font-size: 25px;
+  }
+  .home-reg-card{
+    padding: 20px;
+  }
+  .home-reg-card h2{
+    font-size: 20px;
+  }
+  .home-card h2{
     font-size: 16px;
   }
+  .home-card p{
+    font-size: 10px;
+  }
 }
+/* END OF MEDIA 550 CSS */
+
+
+/* START OF MEDIA 450 CSS */
+@media (max-width: 450px) {
+  .offlinefirst h1{
+    font-size: 25px;
+  }
+  .offlinefirst h6{
+    font-size: 15px;
+  }
+  .offlinefirst p{
+    font-size: x-small;
+  }
+}
+/* end OF MEDIA 450 CSS */
+
+
+/* START OF MEDIA 390 CSS */
+@media (max-width: 390px) {
+  .card__icon{
+    font-size: 20px;
+  }
+  .card__title{
+    font-size: 12px;
+  }
+}
+/* END OF MEDIA 390 CSS */
+
+
