@@ -66,7 +66,6 @@ body{
 }
 
 
-
 /* START OF HEADER SECTION CSS */
 .header{
     display: flex;
@@ -87,17 +86,7 @@ body{
     top: 0;
     left: 0;
     padding-right: 2rem;
-    animation: floating 1.5s ease-in-out infinite alternate;
 }
-  
-  @keyframes floating {
-    0% {
-      transform: translateX(8px);
-    }
-    100% {
-    transform: translateZ(8px);
-    }
-  }
 
 .header .navbar ul{
     list-style-type: none;
@@ -127,6 +116,7 @@ body{
     display: none;
 }
 /* END OF HEADER SECTION CSS */
+
 
 
 /* START OF HOME SECTION CSS */
@@ -181,32 +171,32 @@ body{
     font-weight: 700;
   }
   @keyframes blink {
-    0% {
+    100% {
       background: linear-gradient(137.9deg, rgb(78, 156, 226) 7.8%, rgb(62, 146, 69) 16%, rgb(251, 220, 23) 32.7%, rgb(242, 160, 35) 50.4%, rgb(253, 12, 12) 71.5%, rgb(192, 26, 129) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    20% {
+    80% {
       background: linear-gradient(137.9deg, rgb(62, 146, 69) 7.8%, rgb(251, 220, 23) 16%, rgb(242, 160, 35) 32.7%, rgb(253, 12, 12) 50.4%, rgb(192, 26, 129) 71.5%, rgb(78, 156, 226) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    40% {
+    60% {
       background: linear-gradient(137.9deg, rgb(251, 220, 23) 7.8%, rgb(242, 160, 35) 16%, rgb(253, 12, 12) 32.7%, rgb(192, 26, 129) 50.4%, rgb(78, 156, 226) 71.5%, rgb(62, 146, 69) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    60% {
+    40% {
       background: linear-gradient(137.9deg, rgb(242, 160, 35) 7.8%, rgb(253, 12, 12) 16%, rgb(192, 26, 129) 32.7%, rgb(78, 156, 226) 50.4%, rgb(62, 146, 69) 71.5%, rgb(251, 220, 23) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    80% {
+    20% {
       background: linear-gradient(137.9deg, rgb(253, 12, 12) 7.8%, rgb(192, 26, 129) 16%, rgb(78, 156, 226) 32.7%, rgb(62, 146, 69) 50.4%, rgb(251, 220, 23) 71.5%, rgb(242, 160, 35) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    100% {
+    0% {
       background: linear-gradient(137.9deg, rgb(192, 26, 129) 7.8%, rgb(78, 156, 226) 16%, rgb(62, 146, 69) 32.7%, rgb(251, 220, 23) 50.4%, rgb(242, 160, 35) 71.5%, rgb(253, 12, 12) 83.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -243,83 +233,9 @@ body{
     letter-spacing: 0.1em;
     text-align: center;
   }
-  /* END OF HOME SECTION CSS */
+/* END OF HOME SECTION CSS */
 
 
-
-/* SECTION DIVIDERS CSS */
-/*START OF FIRST SECTION CSS */
-.editorial {
-    display: block;
-    width: 100%;
-    height: 50px;
-    max-height: 50px;
-    margin: 0;
-    z-index:5;
-    bottom:0;
-    position:absolute;
-    left:0px;
-    float:left;
-  }
-  
-  .parallax1 > use {
-    animation: move-forever1 10s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  .parallax2 > use {
-    animation: move-forever2 8s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  .parallax3 > use {
-    animation: move-forever3 6s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  .parallax4 > use {
-    animation: move-forever4 4s linear infinite;
-    &:nth-child(1) {
-      animation-delay: -2s;
-    }
-  }
-  @keyframes move-forever1 {
-    0% {
-      transform: translate(85px, 0%);
-    }
-    100% {
-      transform: translate(-90px, 0%);
-    }
-  }
-  @keyframes move-forever2 {
-    0% {
-      transform: translate(-90px, 0%);
-    }
-    100% {
-      transform: translate(85px, 0%);
-    }
-  }
-  @keyframes move-forever3 {
-    0% {
-      transform: translate(85px, 0%);
-    }
-    100% {
-      transform: translate(-90px, 0%);
-    }
-  }
-  @keyframes move-forever4 {
-    0% {
-      transform: translate(-90px, 0%);
-    }
-    100% {
-      transform: translate(85px, 0%);
-    }
-  }
-  /*END OF FIRST SECTION CSS */
-  
 
 /* START OF ABOUT SECTION CSS */
 .about{
@@ -459,19 +375,6 @@ body{
     line-height: 1.5em;
     font-size: small;
   }
-  /* .blog-slider__button {
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    padding: 15px 35px;
-    border-radius: 50px;
-    color: #fff;
-    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
-    text-decoration: none;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: larger;
-  } */
   @media screen and (max-width: 576px) {
     .blog-slider__button {
       width: 100%;
@@ -480,15 +383,48 @@ body{
 /* END OF MENTOR SECTION CSS */
 
 
+/* START OF MARQUEE CSS */
+.marquee {
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: #002e5f;
+  overflow: hidden;
+  position: relative;
+}
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+  padding-top: 6px;
+  animation: marquee 15s linear infinite;
+}
+.marquee span {
+  float: left;
+  width: 50%;
+  color: antiquewhite;
+  font-size: x-large;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+/* END OF MARQUEE CSS */
+
+
 /* START OF COUNTERS SECTION CSS */
 .counters {
 	background-image: url(../images/finallogo.png);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 	color: #fff;
 	padding: 40px 20px;
-    background-color: #7D7D7C;
+  background-color: #7D7D7C;
 }
 .counters .container {
 	display: grid;
@@ -609,7 +545,6 @@ body{
       height: 350px;
       width: 100%;
       overflow: hidden;
-      /* border-radius: 0px 0px 20px 20px; */
       display: inline-block;
   }
   .img-container img {
@@ -642,7 +577,7 @@ body{
 /* END OF COURSES SECTION CSS */
 
 
-/* START OF CONT5ACT SECTION CSS */
+/* START OF CONTACT SECTION CSS */
 .contact{
     text-align: center;
     align-items: center;
@@ -680,7 +615,7 @@ body{
 	text-align: left;
 }
 .contact-form-txt{
-    margin-left: 2rem;
+  margin-left: 2rem;
 	width: 95%;
 	height: 40px;
 	color: #000;
@@ -689,9 +624,10 @@ body{
 	outline: none;
 	margin-bottom: 20px;
 	padding: 15px;
+  font-size: small;
 }
 .contact-form-email{
-    margin-left: 2rem;
+  margin-left: 2rem;
 	width: 95%;
 	height: 40px;
 	color: #000;
@@ -700,14 +636,15 @@ body{
 	outline: none;
 	margin-bottom: 20px;
 	padding: 15px;
+  font-size: small;
 }
 .contact-form-txt::placeholder{
 	color: #aaa;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .contact-form-email::placeholder{
 	color: #aaa;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .contact-form-txtarea{
     margin-left: 2rem;
@@ -751,11 +688,13 @@ body{
     height: 40px;
     color: #000;
     border: 1px solid #bcbcbc;
-	border-radius: 50px;
-	outline: none;
-	margin-bottom: 20px;
-	padding: 15px;
-		}.contact-form-phone::placeholder{
+	  border-radius: 50px;
+	  outline: none;
+	  margin-bottom: 20px;
+	  padding: 15px;
+    font-size: small;
+		}
+  .contact-form-phone::placeholder{
     color: #aaa;            
     font-size: 1.5rem;
 }
@@ -768,8 +707,9 @@ div + div {
 }
 p {
     line-height: 1.4em;
-    color: #9e9e9e;
+    color: #000000;
     font-size: 1.5em;
+    font-weight: 600;
 }     
 .faq-title {
     font-size: 2em;
@@ -808,8 +748,6 @@ summary {
     -ms-user-select: none; 
     user-select: none;
     transition: all 0.3s ease;
-}
-summary:hover {
     color: #e31b1b;
 }
 details[open] summary ~ * {
@@ -859,7 +797,6 @@ summary:after {
     background: transparent;
     border-radius: 0.3em;
     content: "+";
-    color: #e31b1b;
     float: left;
     font-size: 1.8em;
     font-weight: bold;
@@ -903,7 +840,6 @@ summary:after {
     transition: 0.5s;
   }
   .social-icon__link:hover {
-    transform: translateY(-10px);
     color: #000;
   }
   .menu__link {
@@ -930,66 +866,12 @@ summary:after {
   /* END OF FOOTER SECTION CSS*/
 
 
-  /* START OF FOOTER SECTION WAVE CSS */
-  .wave {
-    position: absolute;
-    top: -70px;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background: url("https://i.ibb.co/wQZVxxk/wave.png");
-    background-size: 1000px 100px;
-  } 
-  .wave#wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 20px;
-    animation: animateWaves 5s linear infinite;
-  }  
-  .wave#wave2 {
-    z-index: 999;
-    opacity: 0.3;
-    bottom: 10px;
-    animation: animate 5s linear infinite !important;
-  }  
-  .wave#wave3 {
-    z-index: 1000;
-    opacity: 0.1;
-    bottom: 15px;
-    animation: animateWaves 4s linear infinite;
-  } 
-  .wave#wave4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animate 4s linear infinite;
-  }
-  @keyframes animateWaves {
-    0% {
-      background-position-x: 1000px;
-    }
-    100% {
-      background-positon-x: 0px;
-    }
-  }
-  
-  @keyframes animate {
-    0% {
-      background-position-x: -1000px;
-    }
-    100% {
-      background-positon-x: 0px;
-    }
-  }
-/* END OF FOOTER SECTION WAVE CSS */
-
-
 /* START OF MEDIA 1200 CSS */
-@media (max-width: 1200px){
+  @media (max-width: 1200px){
     .faq{
-        min-height: 70vh;
+      min-height: 70vh;
     }
-}  
+  }  
 /* END OF MEDIA 1200 CSS */
 
 
@@ -1010,77 +892,81 @@ summary:after {
   .contact-form-btn{
     width: 90% !important;
   }
+  .marquee div{
+    animation: marquee 5s linear infinite;
+  }
 
     .header .logo img{
-        width: 100%;
-        height: 6rem;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        padding-right: 20rem;
+      width: 100%;
+      height: 6rem;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      padding-right: 20rem;
     }
     .header .fa-bars{
-        display: block;
-        color: 	rgb(0, 0, 0);
-        margin-right: 1rem;
+      display: block;
+      color: 	rgb(0, 0, 0);
+      margin-right: 1rem;
     }
 
     .header .fa-bars:hover{
-        color: #00bfff;
+      color: #00bfff;
     }
 
     .header .navbar{
-        position: fixed;
-        top: -120%;
-        left: 0;
-        height: auto;
-        width: 100%;
-        background-color: white;
-        z-index: 1000;
-        border-top: .1rem solid rgba(0,0,0,.3);
+      position: fixed;
+      top: -120%;
+      left: 0;
+      height: auto;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      border-top: .1rem solid rgba(0,0,0,.3);
     }
 
     .header .navbar ul{
-        height: 100%;
-        width: 100%;
-        flex-flow: column;
+      height: 100%;
+      width: 100%;
+      flex-flow: column;
     }
 
     .header .navbar ul li{
-        margin: 5px 0.05rem;
+      margin: 5px 0.05rem;
     }
 
     .header .navbar ul li a{
-        color: grey;
-        font-size: 2.4rem;
+      color: grey;
+      font-size: 2.4rem;
     }
 
     .header .fa-times{
-        transform: rotate(90deg);
+      transform: rotate(90deg);
     }
 
     .header .nav-toggle{
-        top: 8rem;
+      top: 8rem;
     }
-
-
+    .marquee div{
+      width: 300%;
+    }
     #faq .faq-list{
-        width: 70%
+      width: 70%
     }
     .homeleft{
-        padding-top: 20% !important;
+      padding-top: 20% !important;
     }
     .text{
-        font-size: 20px !important;
+      font-size: 20px !important;
     }
     .para{
-        font-size: 45px !important;
+      font-size: 45px !important;
     }
     .design2{
-        font-size: 32px !important;
+      font-size: 32px !important;
     }
     .para2{
-        font-size: 15px !important;
+      font-size: 15px !important;
     }
 	.counters .container {
 		grid-template-columns: repeat(2, 1fr);
@@ -1096,87 +982,97 @@ summary:after {
 
 /* START OF MEDIA 575 CSS */
 @media (max-width: 575px) {
-    .testimonials .testimonial-text {
-        padding: 25px;
-    }
-    #faq .faq-body{
-        padding: 0 !important;
-    }
-    #faq summary {
-        font-size: 1.4em;
-    }
-    #faq p {
-        line-height: 1em;
-    }
-    #faq .faq-list{
-        width: 100% !important;
-        padding: 0;
-        margin-bottom: 5em;
-    }
-    
+  .marquee div {
+    width: 400%;
+  }
+  .marquee span{
+    letter-spacing: 1px;
+  }
+  .testimonials .testimonial-text {
+    padding: 25px;
+  }
+  #faq .faq-body{
+    padding: 0 !important;
+  }
+  #faq summary {
+    font-size: 1.4em;
+  }
+  #faq p {
+    line-height: 1em;
+  }
+  #faq .faq-list{
+    width: 100% !important;
+    padding: 0;
+    margin-bottom: 5em;
+  }
 }
-/* STENDART OF MEDIA 575 CSS */
+/* END OF MEDIA 575 CSS */
 
 
 /* START OF MEDIA 1000 CSS */
 @media (max-width: 1000px){
     .img-container img {
-        height: 300px;
-        margin: 0px 0px 0px -50px;
+      height: 300px;
+      margin: 0px 0px 0px -50px;
     }
     html{
-        font-size: 50%;
+      font-size: 50%;
     }
     .homeleft{
-        width: 100%;
+      width: 100%;
     }
     .para{
-        font-size: 50px;
+      font-size: 50px;
     }
     .text{
-        font-size: 25px;
+      font-size: 25px;
     }
     .para2{
-        font-size: 20px;
-        width: 65%;
+      font-size: 20px;
+      width: 65%;
     }
     .about{
-        min-height: 38vh;
-        width: 100vw;
-        margin-top: -3rem;
-        margin-bottom: -2rem;
-        top: -2rem;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        line-height: 6rem;
+      min-height: 38vh;
+      width: 100vw;
+      margin-top: -3rem;
+      margin-bottom: -2rem;
+      top: -2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      line-height: 6rem;
     }
    .about .row{
-        line-height: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0 4rem;
+      line-height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 4rem;
     }   
     .about .row .content{
         text-align: center;
     }    
     .about .row .content h3{
-        font-size: 2rem;
-        color: var(--color);
+      font-size: 2rem;
+      color: var(--color);
     } 
     .about .row .content p{
-        font-size: 1.3rem;
-        color: #333;
-        padding: 1rem 0;
+      font-size: 1.3rem;
+      color: #333;
+      padding: 1rem 0;
     } 
+    .marquee span{
+      padding-top: 5px;
+      font-size: large;
+      gap: 20px;
+    }
     .contact{
-        text-align: center;
-        align-items: center;
+      text-align: center;
+      align-items: center;
     }
     .contact .heading{
-        margin-bottom: 3rem;
-        margin-top: -2rem;
+      margin-bottom: 3rem;
+      margin-top: -2rem;
     }
     .contact-in
 	{
@@ -1221,7 +1117,7 @@ summary:after {
 	}
     .contact-form-email
 	{
-        margin-left: 2rem;
+    margin-left: 2rem;
 		width: 90%;
 		height: 20px;
 		color: #000;
@@ -1234,16 +1130,16 @@ summary:after {
 	.contact-form-txt::placeholder
 	{
 		color: #aaa;
-        font-size: 1.5rem;
+    font-size: 1.5rem;
 	}
     .contact-form-email::placeholder
 	{
 		color: #aaa;
-        font-size: 1.5rem;
+    font-size: 1.5rem;
 	}
 	.contact-form-txtarea
 	{
-        margin-left: 2rem;
+    margin-left: 2rem;
 		width: 90%;
 		height: 110px;
 		color: #000;
@@ -1257,32 +1153,32 @@ summary:after {
 	.contact-form-txtarea::placeholder
 	{
 		color: #aaa;
-        font-size: 1.5rem;
+    font-size: 1.5rem;
 	}
 	.contact-form-btn
 	{
-        margin-left: 2rem;
-        outline: none;
-        border: none;
-        border-radius: 5rem;
-       background: white;
-        border-style: groove;
-        border-color: #002e5f;
-        font-size: 1.5rem;
-       cursor: pointer;
-        height: 3.5rem;
-        width: 12rem;
-        box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    margin-left: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: white;
+    border-style: groove;
+    border-color: #002e5f;
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 12rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
 	}
     .contact-form-btn:hover{
-        letter-spacing: .1rem;
-        opacity: .9;
-        color: white;
-        background: #002e5f;
+      letter-spacing: .1rem;
+      opacity: .9;
+      color: white;
+      background: #002e5f;
     }
 	.contact-form-phone
 	{
-        margin-left: 2rem;
+    margin-left: 2rem;
 		width: 90%;
 		height: 20px;
 		color: #000;
@@ -1295,18 +1191,18 @@ summary:after {
 	.contact-form-phone::placeholder
 	{
 		color: #aaa;
-       font-size: 1.5rem;
+    font-size: 1.5rem;
 	}
     .faq{
-        padding: 0;
-        min-height: 60vh;
+      padding: 0;
+      min-height: 60vh;
     }   
     .faq .row{
-        padding: 0 1.5rem;
-        flex-flow: column;
+      padding: 0 1.5rem;
+      flex-flow: column;
     }
     .faq .row .accordion-container{
-        width: 100%;
+      width: 100%;
     }
 }
 /* END OF MEDIA 1000 CSS */
