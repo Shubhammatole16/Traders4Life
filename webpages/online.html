@@ -1,13 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>online</title>
+        <title>offline</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="../css/webpages.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <div class="offlinefirst">
-            <h1>AUGUST TRADERS4LIFE ONLINE PROGRAMME</h1>
-            <h6>START YOUR JOURNEY TOWARDS FINANCIAL FREEDOM</h6>
+
+      
+      <!-- START OF HOME PAGE -->
+        <div class="home-page">
+          <div class="home-left">  
+            <div class="offlinefirst">
+              <h1>SEPTEMBER&nbsp; TRADERS4LIFE&nbsp; ONLINE&nbsp; PROGRAMME</h1>
+              <h6>START&nbsp; YOUR&nbsp; JOURNEY&nbsp; TOWARDS&nbsp; FINANCIAL&nbsp; FREEDOM</h6>
+              <p style="color: rgb(165, 155, 155);  font-family: 'Exo 2', sans-serif;">START YOUR JOURNEY TOWARDS FINANCIAL FREEDOM AND LEARN HOW TO BECOME A PROFITABLE TRADER WITH US</p>
+              
+
+              <!-- START OF HOME CARD SECTION  -->
+              <div class="home-container">
+                <div class="home-card">
+                  <p>Starts on: </p>
+                  <h2>5<sup>TH</sup> SEPTEMBER 2024</h2>         
+                </div>
+                <div class="home-card">
+                  <p>Time: </p>
+                  <h2>8 pM &nbsp;to &nbsp;9 PM</h2>
+                </div>
+                <div class="home-card">
+                  <p>Course Duration:</p>
+                  <h2>26 - 30 Days</h2>
+                </div>
+              </div>
+
+              <!-- START OF REGISTER BUTTON -->
+              <div class="home-reg-container">
+                <div class="home-reg-card" id="openModalBtn">
+                  <h2>REGISTER FOR ONLY ₹ 21,000/-</h2>         
+                </div>
+              </div>
+            </div> 
+          </div>  
+        </div>  
+        <!-- END OF HOME PAGE -->
+
+
+        <!-- START OF WHAT WILL YOU LEARN -->
+        <div class="main-container">
+            <div class="heading">
+              <h1 class="heading__title">What Will You <span>Learn?</span></h1>
+            </div>
+            <div class="cards">
+
+              <div class="card card-1">
+                <div class="card__icon">Intro To Forex Market:</div>
+                <h2 class="card__title">
+                    &rArr; What is Forex & How it works?<br>
+                    &rArr; Lot Sizes, Currencies & Pairs<br>
+                    &rArr; Operating Mt5 App<br>
+                    &rArr; Stop Loss/Take Profit<br>
+                    &rArr; Pending order execution<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Forex Market Analysis:</div>
+                <h2 class="card__title">
+                    &rArr; Market structure mapping<br>
+                    &rArr; How to do technical analysis<br>
+                    &rArr; What is fundamental analysis<br>
+                    &rArr; Where to look fundamentals<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Smart Money Concept:</div>
+                <h2 class="card__title">
+                    &rArr; Market structure<br>
+                    &rArr; Demand, Supply<br>
+                    &rArr; Liquidity, Imbalance, Liquidity traps<br>
+                    &rArr; QML(Quasimodo Level)<br>
+                    &rArr; Entry exit models<br>
+                    &rArr; Premium discount zones<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Risk Management:</div>
+                <h2 class="card__title">
+                    &rArr; Understanding optimum risk reward ratio<br>
+                    &rArr; Capital management<br>
+                    &rArr; How to grow portfolio<br>
+                    &rArr; How to divide traps by equity management<br>
+                    &rArr; Compounding methods<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Mindset Management:</div>
+                <h2 class="card__title">
+                    &rArr; How to create winners mindset<br>
+                    &rArr; Understanding Fear, Greed, etc<br>
+                    &rArr; Discipline > Success<br>
+                    &rArr; What should be mindset during trading<br>
+                    &rArr; How to control overtrading<br>
+                    &rArr; How to be psychological beast in trading<br>
+                </h2>
+              </div>
+            </div>
+          </div>
+        <!-- END OF WHAT WILL YOU LEARN -->
+
+
+        <!-- START OF WHAT WILL YOU GET -->
+        <div class="main-container-get">
+            <div class="heading">
+              <h1 class="heading__title">What Will You <span>Get?</span></h1>
+            </div>
+            <div class="cards">
+
+              <div class="card card-1">
+                <div class="card__icon">Access To Community:</div>
+                <h2 class="card__title">
+                    &rArr; Lifetime access to our trading community.<br>
+                    &rArr; With 24/7 access to all the traders and their setups.<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Lifetime Mentorship:</div>
+                <h2 class="card__title">
+                    &rArr; Even after Completion of the course, you ask doubts and remain part of the respective batch group<br>
+                </h2>
+              </div>
+
+              <div class="card card-1">
+                <div class="card__icon">Contnet Access:</div>
+                <h2 class="card__title">
+                    &rArr; Student has lifetime access of the PDF content shared during the sessions.<br>
+                    &rArr; If there is any new content, it will be updated.<br>
+                </h2>
+              </div>
+            </div>
+          </div>
+        <!-- END OF WHAT WILL YOU GET -->
+
+
+        <!-- START OF FORM SECTION -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 style="text-align: center;">Fill the Details<br>
+            <h2 style="text-align: center;">We will contact you soon</h2></h1>
+            <form id="registrationForm" onsubmit="sendOfflineData(event)">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <input type="hidden" name="batch" value="Online"/>
+      
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+      
+              <input class="submit" type="submit" value="Submit" name="submit">
+            </form>
+          </div>
         </div>
-    </body>
+        <!-- END OF FORM SECTION -->
+
+        
+<!-- START OF FAQ SECTION -->
+<section id="faq" class="faq-body" style="text-align: center; background-color: black;">
+    <div class="heading">
+        <h1 class="heading__title">Frequently Asked <span>Questions</span></h1>
+      </div>
+    <div class="faq-list" style="text-align: left;">
+        <div>
+            <details open>
+                <summary>What's the starting date of the class?</summary>
+                <p class="faq-content" style="color: #ffffff;">The sessions will start from 5th September.</p>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>What's the time of class?</summary>
+                <p class="faq-content" style="color: #ffffff;">The Class Will Be Held in The Evening Around 8PM.</p>
+            </details>
+        </div>
+        <div>
+           <details>
+               <summary>How many classes will be held in week?</summary>
+                <p class="faq-content" style="color: #ffffff;">5 Classes Will Be Held in a Week.</p>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>What is the duration of the course?</summary>
+                <p class="faq-content" style="color: #ffffff;">The Duration Of The Course is 1 Month Depending Upon Every Batch, 20-25 Sessions,
+                    Each Session is of 1 Hours.</p>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>Where will be classes held?</summary>
+                <p class="faq-content" style="color: #ffffff;">The classes will be held on Live by Mahesg Raut Sir on ZOOM.</p>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>When can i come visit the office?</summary>
+                <p class="faq-content" style="color: #ffffff;">You can come at 10am - 6pm Monday to Friday.</p>
+            </details>
+        </div>
+    </div>
+</section>
+<!-- END OF FAQ SECTION -->
+
+
+<script src="../js/main.js"></script>
+</body>
 </html>
