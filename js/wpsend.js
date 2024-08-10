@@ -8,7 +8,7 @@ function sendWp(event) {
     const city = document.getElementById('city').value;
 
     // Create the message to send
-    const message = ` *Contact Details:* \n *_Name:*_ ${name}\n *_Phone:*_ ${phone}\n *_State:*_ ${state}\n *_City:*_ ${city} `;
+    const message = ` *Contact Details:* \n *_Name:_* ${name}\n *_Phone:_* ${phone}\n *_State:_* ${state}\n *_City:_* ${city} `;
     
     // Encode the message
     const encodedMessage = encodeURIComponent(message);
