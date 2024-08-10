@@ -40,7 +40,7 @@
         const encodedMessage = encodeURIComponent(message);
     
         // Replace 'YOUR_PHONE_NUMBER' with your actual WhatsApp number in international format
-        const whatsappNumber = '919518303249'; // e.g., '11234567890'
+        const whatsappNumber = '917737743131'; // e.g., '11234567890'
         
         // Construct the WhatsApp link with your number
         const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
