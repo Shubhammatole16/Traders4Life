@@ -34,7 +34,7 @@
         const batch = document.querySelector('input[name="batch"]').value;
     
         // Create the message to send
-        const message = `*Registration Details:* \n *_Name:*_ ${name}\n *_Phone:*_ ${phone}\n *_Batch:*_ ${batch}`;
+        const message = `*Registration Details:* \n *Name:-* ${name}\n *Phone:-* ${phone}\n *Batch:-* ${batch}`;
         
         // Encode the message
         const encodedMessage = encodeURIComponent(message);
