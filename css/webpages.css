@@ -438,21 +438,26 @@ input[type="tel"] {
   align-items: center;
   font-family: 'Arial', sans-serif;
   animation: slideDown 0.5s ease-in-out;
-}
+  box-sizing: border-box;
+  overflow-x: hidden;
+
 /* Slide down animation */
 @keyframes slideDown {
   from { transform: translateY(-100%); }
   to { transform: translateY(0); }
 }
+
 .banner-content {
   max-width: 100%;
   margin: 0 auto;
 }
+
 .banner h1 {
   font-size: 3rem;
   margin: 0;
   line-height: 1.2;
 }
+
 .banner h1 .highlight {
   font-weight: bold;
   color: #fff;
@@ -460,11 +465,13 @@ input[type="tel"] {
   padding: 0 15px;
   border-radius: 5px;
 }
+
 .banner p {
   font-size: 1.5rem;
   margin: 10px 0;
   line-height: 1.5;
 }
+
 .close-banner {
   background: none;
   border: none;
@@ -474,9 +481,11 @@ input[type="tel"] {
   margin-top: 15px;
   transition: color 0.3s ease;
 }
+
 .close-banner:hover {
   color: #ff9f00;
 }
+
 @media (max-width: 768px) {
   .banner h1 {
     font-size: 2rem;
