@@ -287,7 +287,21 @@
 <!-- END OF FOOTER SECTION -->
 
 
-<script src="./js/animation.js"></script>
+<script>
+  const menuIcon = document.querySelector('.header .fa-bars');
+  const navbar = document.querySelector('.header .navbar ul');
+  const menuLinks = document.querySelectorAll('.header .navbar ul li a');
+
+  menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+  });
+
+  menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          navbar.classList.remove('active');
+      });
+  });
+</script>
 
 <script src="./js/wpsend.js"></script>
 </body>
