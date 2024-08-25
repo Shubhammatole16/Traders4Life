@@ -15,6 +15,10 @@ body {
   text-align: center;
 }
 
+.home-page, .home-left, .main-container, .main-container-get, .form-container, .banner {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 /* START OF HOME-LEFT CSS */
 .home-left{
