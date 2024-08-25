@@ -23,6 +23,7 @@ body{
     color: #002e5f;
     position: relative;
     letter-spacing: .2rem;
+    font-weight: 800;
 }
 .heading::before, .heading::after, .section-head h1::before, .section-head h1::after{
     content: '';
@@ -62,7 +63,7 @@ body{
     background-color: #fff;
 }
 .header .logo img{
-    width: 120%;
+    width: 105%;
     height: 5rem;
     top: 0;
     left: 0;
@@ -145,50 +146,35 @@ body{
     border-radius: 10px;
     position: relative;
   }
-  .design .text{
-    animation: blink 2s infinite; 
+  .design .text {
+    animation: gradientMotion 5s linear infinite;
     font-weight: 700;
+    background: linear-gradient(137.9deg, rgb(78, 156, 226), rgb(62, 146, 69), rgb(251, 220, 23), rgb(242, 160, 35), rgb(253, 12, 12), rgb(192, 26, 129));
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  @keyframes blink {
-    100% {
-      background: linear-gradient(137.9deg, rgb(78, 156, 226) 7.8%, rgb(62, 146, 69) 16%, rgb(251, 220, 23) 32.7%, rgb(242, 160, 35) 50.4%, rgb(253, 12, 12) 71.5%, rgb(192, 26, 129) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    80% {
-      background: linear-gradient(137.9deg, rgb(62, 146, 69) 7.8%, rgb(251, 220, 23) 16%, rgb(242, 160, 35) 32.7%, rgb(253, 12, 12) 50.4%, rgb(192, 26, 129) 71.5%, rgb(78, 156, 226) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    60% {
-      background: linear-gradient(137.9deg, rgb(251, 220, 23) 7.8%, rgb(242, 160, 35) 16%, rgb(253, 12, 12) 32.7%, rgb(192, 26, 129) 50.4%, rgb(78, 156, 226) 71.5%, rgb(62, 146, 69) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    40% {
-      background: linear-gradient(137.9deg, rgb(242, 160, 35) 7.8%, rgb(253, 12, 12) 16%, rgb(192, 26, 129) 32.7%, rgb(78, 156, 226) 50.4%, rgb(62, 146, 69) 71.5%, rgb(251, 220, 23) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    20% {
-      background: linear-gradient(137.9deg, rgb(253, 12, 12) 7.8%, rgb(192, 26, 129) 16%, rgb(78, 156, 226) 32.7%, rgb(62, 146, 69) 50.4%, rgb(251, 220, 23) 71.5%, rgb(242, 160, 35) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  
+  @keyframes gradientMotion {
     0% {
-      background: linear-gradient(137.9deg, rgb(192, 26, 129) 7.8%, rgb(78, 156, 226) 16%, rgb(62, 146, 69) 32.7%, rgb(251, 220, 23) 50.4%, rgb(242, 160, 35) 71.5%, rgb(253, 12, 12) 83.1%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
     }
   }
+  
   .para{
     margin-top: 2rem;
     font-size: 60px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 0.1em;
-    color: whitesmoke;
+    color: #F5F5F5;
   }
   .para2{
     text-align: center;
@@ -237,11 +223,12 @@ body{
     text-align: left;
 }
 .about .row .content h3{
-    font-size: 3rem;
-    color: black;
+    font-size: 2.2rem;
+    color: rgb(32, 31, 31);
+    font-weight: 600;
 }
 .about .row .content p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #333;
     padding: 1rem 0;
     font-weight: 500;
@@ -330,6 +317,9 @@ body{
       text-align: center;
       padding: 0 30px;
     }
+    .blog-slider__text {
+      text-align: left;
+    }
   }
   @media screen and (max-width: 576px) {
     .blog-slider__content {
@@ -338,8 +328,7 @@ body{
   }
   .blog-slider__code {
     font-weight: 900;
-    font-size: larger;
-    text-decoration: underline;
+    font-size: 16px;
     color: royalblue;
   }
   .blog-slider__title {
@@ -348,10 +337,10 @@ body{
     color: #0d0925;
   }
   .blog-slider__text {
-    color: #4e4a67;
+    color: #2b2939;
     margin-bottom: 30px;
     line-height: 1.5em;
-    font-size: small;
+    font-size: 14px;
   }
   @media screen and (max-width: 576px) {
     .blog-slider__button {
@@ -426,6 +415,20 @@ body{
     margin-bottom: 30px;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
+    position: relative;
+  }
+  .highlight-text {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff6b6b; 
+    color: #fff;
+    padding: 8px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg); 
   }
   .item:hover{
     background-image: linear-gradient(to bottom right, #66ffcc 0%, #ffccff 100%);
@@ -575,7 +578,7 @@ body{
 	margin: auto auto 5rem auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px;
+	padding: 30px;
 	border-radius: 10px;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px 0px #666;
@@ -588,6 +591,7 @@ body{
 .contact-map iframe{
 	width: 100%;
 	height: 100%;
+  border-radius: 10px;
 }
 .contact-form{
 	width: 100%;
@@ -785,7 +789,7 @@ summary:after {
 .footer {
     position: relative;
     width: 100%;
-    background: #3586ff;
+    background: #7D7D7C;
     min-height: 100px;
     display: flex;
     justify-content: center;
@@ -823,7 +827,7 @@ summary:after {
   .social-icon__link:hover,
   .menu__link:hover {
     opacity: 1;
-    color: #000;
+    color: #000000;
     font-weight: 700;
   }
   .footer p {
@@ -1032,6 +1036,7 @@ summary:after {
 		border-radius: 10px;
 		background: #fff;
 		box-shadow: 0px 0px 10px 0px #666;
+    padding: 30px;
 	}
 	.contact-map
 	{
