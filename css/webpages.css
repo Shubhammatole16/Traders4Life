@@ -429,7 +429,7 @@ input[type="tel"] {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw; /* Ensure width is set to viewport width */
   background: linear-gradient(135deg, #ff6f61, #ff9f00);
   color: #fff;
   text-align: center;
@@ -443,7 +443,7 @@ input[type="tel"] {
   animation: slideDown 0.5s ease-in-out;
   box-sizing: border-box;
   overflow-x: hidden;
-
+}
 /* Slide down animation */
 @keyframes slideDown {
   from { transform: translateY(-100%); }
