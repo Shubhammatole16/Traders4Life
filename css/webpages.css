@@ -445,7 +445,7 @@ input[type="tel"] {
   to { transform: translateY(0); }
 }
 .banner-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .banner h1 {
