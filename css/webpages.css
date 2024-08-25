@@ -5,12 +5,14 @@
   box-sizing: border-box;
   margin: 0;
 }
+body {
+  overflow-x: hidden;
+}
 
 
 /* START OF HOME PAGE CSS */
 .home-page{
   text-align: center;
-  width: 100%;
 }
 
 
