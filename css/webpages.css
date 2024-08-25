@@ -490,6 +490,9 @@ input[type="tel"] {
 }
 
 @media (max-width: 768px) {
+  .banner {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
   .banner h1 {
     font-size: 2rem;
   }
@@ -497,3 +500,4 @@ input[type="tel"] {
     font-size: 1.2rem;
   }
 }
+
